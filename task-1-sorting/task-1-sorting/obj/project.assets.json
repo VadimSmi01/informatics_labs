@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project_coding_C#\\coding-task\\task-1-sorting\\task-1-sorting\\task-1-sorting.csproj",
+      "projectUniqueName": "D:\\Project_coding_C#\\programming-task\\task-1-sorting\\task-1-sorting\\task-1-sorting.csproj",
       "projectName": "task-1-sorting",
-      "projectPath": "D:\\Project_coding_C#\\coding-task\\task-1-sorting\\task-1-sorting\\task-1-sorting.csproj",
+      "projectPath": "D:\\Project_coding_C#\\programming-task\\task-1-sorting\\task-1-sorting\\task-1-sorting.csproj",
       "packagesPath": "C:\\Users\\79201\\.nuget\\packages\\",
-      "outputPath": "D:\\Project_coding_C#\\coding-task\\task-1-sorting\\task-1-sorting\\obj\\",
+      "outputPath": "D:\\Project_coding_C#\\programming-task\\task-1-sorting\\task-1-sorting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\79201\\AppData\\Roaming\\NuGet\\NuGet.Config",

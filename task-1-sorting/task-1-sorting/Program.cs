@@ -14,7 +14,7 @@ namespace task_1_sorting
             bool arrayEntered = false;
             while (true)
             {
-               // Comand = Console.ReadLine();
+                // Comand = Console.ReadLine();
                 //if (Comand == "menu")
                 {
                     Console.WriteLine("СПИСОК ДЕЙСТВИЙ");
@@ -76,7 +76,7 @@ namespace task_1_sorting
 
                                         // вывод
                                         Console.WriteLine("Вывод отсортированного массива");
-                                        
+
                                         {
                                             Console.WriteLine("[{0}]", string.Join(", ", arr));
                                         }
@@ -101,7 +101,7 @@ namespace task_1_sorting
 
                                         // вывод
                                         Console.WriteLine("Вывод отсортированного массива");
-                                        
+
                                         {
                                             Console.WriteLine("[{0}]", string.Join(", ", arr));
                                         }
@@ -127,49 +127,42 @@ namespace task_1_sorting
                         case "3":
                             if (arrayEntered)
                             {
-                                double[] ms1 = new double[4];
-                                double[] ms2 = new double[4];
-                                for (int i = 0; i < arr.Length / 2; i++)
-                                {
-                                    ms1[i] = arr[i];
-                                    ms2[i] = (arr[i] + arr.Length / 2);
-
-                                }
-
                                 double z;
-                                for (int i = 0; i < ms1.Length - 1; i++)
+
+                                for (int i = 0; i < 4; i++)
                                 {
-                                    for (int j = i + 1; j < ms1.Length; j++)
+                                    for (int j = i + 1; j < 4; j++)
                                     {
-                                        if (ms1[i] > ms1[j])
+                                        if (arr[i] > arr[j])
                                         {
-                                            z = ms1[i];
-                                            ms1[i] = ms1[j];
-                                            ms1[j] = z;
+                                            z = arr[i];
+                                            arr[i] = arr[j];
+                                            arr[j] = z;
                                         }
                                     }
                                 }
 
                                 double u;
-                                for (int i = 0; i < ms2.Length - 1; i++)
+
+                                for (int i = 4; i < 8; i++)
                                 {
-                                    for (int j = i + 1; j < ms2.Length; j++)
+
+                                    for (int j = i + 1; j < 8; j++)
                                     {
-                                        if (ms2[i] < ms2[j])
+                                        if (arr[i] < arr[j])
                                         {
-                                            u = ms2[i];
-                                            ms2[i] = ms2[j];
-                                            ms2[j] = u;
+                                            u = arr[i];
+                                            arr[i] = arr[j];
+                                            arr[j] = u;
                                         }
                                     }
                                 }
 
                                 {
                                     double[] zaz = new double[8];
-                                    Array.Copy(ms1, 0, zaz, 0, 4);
-                                    Array.Copy(ms2, 0, zaz, 4, 4);
+                                    Array.Copy(arr, 0, zaz, 0, 8);
                                     Console.WriteLine("Вывод отсортированного массива");
-                                    
+
                                     {
                                         Console.WriteLine("[{0}]", string.Join(", ", zaz));
                                     }
@@ -192,7 +185,7 @@ namespace task_1_sorting
                         default:
                             Console.WriteLine("Ошибка, ввели не то действие");
                             break;
-                            
+
                     }
 
 
@@ -203,49 +196,46 @@ namespace task_1_sorting
                 }
 
             }
-               
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
             // ввод чисел
-          /*      int[] nums = new int[8];
-            Console.WriteLine("Введите восемь чисел");
-            for (int i = 0; i < nums.Length; i++)
-            {
-                Console.Write("{0}-е число: ", i + 1);
-                nums[i] = Int32.Parse(Console.ReadLine());
-            }
+            /*      int[] nums = new int[8];
+              Console.WriteLine("Введите восемь чисел");
+              for (int i = 0; i < nums.Length; i++)
+              {
+                  Console.Write("{0}-е число: ", i + 1);
+                  nums[i] = Int32.Parse(Console.ReadLine());
+              }
 
-            // сортировка
-            int temp;
-            for (int i = 0; i < nums.Length - 1; i++)
-            {
-                for (int j = i + 1; j < nums.Length; j++)
-                {
-                    if (nums[i] > nums[j])
-                    {
-                        temp = nums[i];
-                        nums[i] = nums[j];
-                        nums[j] = temp;
-                    }
-                }
-            }
+              // сортировка
+              int temp;
+              for (int i = 0; i < nums.Length - 1; i++)
+              {
+                  for (int j = i + 1; j < nums.Length; j++)
+                  {
+                      if (nums[i] > nums[j])
+                      {
+                          temp = nums[i];
+                          nums[i] = nums[j];
+                          nums[j] = temp;
+                      }
+                  }
+              }
 
-            // вывод
-            Console.WriteLine("Вывод отсортированного массива");
-            for (int i = 0; i < nums.Length; i++)
-            {
-                Console.WriteLine(nums[i]);
-            }
-            Console.ReadLine(); */
+              // вывод
+              Console.WriteLine("Вывод отсортированного массива");
+              for (int i = 0; i < nums.Length; i++)
+              {
+                  Console.WriteLine(nums[i]);
+              }
+              Console.ReadLine(); */
         }
     }
 }
-        
-    
-
