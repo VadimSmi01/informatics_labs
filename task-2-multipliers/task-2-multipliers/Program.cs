@@ -29,7 +29,7 @@ namespace task_2_multipliers
                     Console.WriteLine("Вы ввели ненедопустимое значение");
                     continue;
                 }
-              
+
                 if (a < 0 || b < 0 || c < 0)
                 {
                     Console.WriteLine("Ошибка! Введите не отрицательное значение");
@@ -45,7 +45,7 @@ namespace task_2_multipliers
         }
         static double NOK(double a, double b, double c)
         {
-            double  Nok = a * b * c;
+            double Nok = a * b * c;
             for (int i = 1; i <= Nok; i++)
             {
                 if ((i % a == 0) && (i % b == 0) && (i % c == 0))
